@@ -92,6 +92,7 @@ public class DatosJSon {
 
                         // Guardar datos para mostrar en JTextArea
                         setDatos(getDatos().concat(
+                        	"-----------------------------------------------------------------\n" +
                             "Estación: " + nombre + "\n" +
                             "Bicicletas disponibles: " + bicis + "\n" +
                             "Espacios disponibles: " + anclajes + "\n" +
