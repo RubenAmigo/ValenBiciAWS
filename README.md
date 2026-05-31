@@ -26,13 +26,17 @@ en Amazon RDS (AWS).
 - Base de datos: valenbisi
 
 ## Estructura de la tabla
+## Estructura de la tabla
 ```sql
 CREATE TABLE historico (
-    estacion_id INT,
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    estacion_id INT NOT NULL,
     direccion VARCHAR(255),
-    bicis_disponibles INT,
-    anclajes_libres INT,
-    estado_operativo INT
+    bicis_disponibles INT NOT NULL,
+    anclajes_libres INT NOT NULL,
+    estado_operativo BOOLEAN NOT NULL,
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ubicación POINT
 );
 ```
 
