@@ -26,7 +26,6 @@ en Amazon RDS (AWS).
 - Base de datos: valenbisi
 
 ## Estructura de la tabla
-## Estructura de la tabla
 ```sql
 CREATE TABLE historico (
     id INT AUTO_INCREMENT PRIMARY KEY,
